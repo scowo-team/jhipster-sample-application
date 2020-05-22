@@ -185,6 +185,11 @@ npm_install {
     args = ['--prefer-offline', '--no-audit', '--progress=false']
 }
 
+npmInstall {
+    args = ['--prefer-offline', '--no-audit', '--progress=false']
+}
+
+
 configurations {
     providedRuntime
     implementation.exclude module: "spring-boot-starter-tomcat"
