@@ -17,6 +17,8 @@ node {
         sh "./gradlew checkstyleNohttp --no-daemon"
     }
 
+
+
     stage('npm install') {
         sh "./gradlew npm_install -PnodeInstall --no-daemon"
     }
