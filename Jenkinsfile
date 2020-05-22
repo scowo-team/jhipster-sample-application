@@ -18,7 +18,7 @@ node {
     }
 
     stage('npm install') {
-        sh "./gradlew npm_install -PnodeInstall --no-daemon --prefer-offline --no-audit --progress=false"
+        sh "./gradlew npm_install -PnodeInstall --no-daemon"
     }
 
     // stage('backend tests') {

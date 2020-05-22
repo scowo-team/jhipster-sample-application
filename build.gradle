@@ -181,6 +181,10 @@ nohttp {
     source.include "build.gradle", "README.md"
 }
 
+npm_install {
+    args = ['--prefer-offline', '--no-audit', '--progress=false']
+}
+
 configurations {
     providedRuntime
     implementation.exclude module: "spring-boot-starter-tomcat"
