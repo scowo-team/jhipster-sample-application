@@ -45,7 +45,7 @@ node {
 
     stage('packaging') {
         //sh "./gradlew bootJar -x test -Pprod -PnodeInstall --no-daemon"
-        sh "./gradlew bootJar -Pprod"
+        sh "./gradlew bootJar -Pprod -PnodeInstall --no-daemon"
         archiveArtifacts artifacts: '**/build/libs/*.jar', fingerprint: true
     }
 
