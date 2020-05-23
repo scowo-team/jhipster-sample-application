@@ -181,6 +181,15 @@ nohttp {
     source.include "build.gradle", "README.md"
 }
 
+npm_install {
+    args = ['--prefer-offline', '--no-audit', '--progress=false']
+}
+
+npmInstall {
+    args = ['--prefer-offline', '--no-audit', '--progress=false']
+}
+
+
 configurations {
     providedRuntime
     implementation.exclude module: "spring-boot-starter-tomcat"
@@ -188,7 +197,7 @@ configurations {
         resolutionStrategy {
             // Inherited version from Spring Boot can't be used because of regressions:
             // To be removed as soon as spring-boot use the same version
-            force 'org.liquibase:liquibase-core:3.8.1'
+            force 'org.liquibase:liquibase-core:3.9.0'
         }
     }
 }
