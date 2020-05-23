@@ -36,9 +36,7 @@
     "dtoSuffix": "DTO",
     "otherModules": [],
     "blueprints": [],
-    "prettierJava": true,
-    "herokuAppName": "jhipster-sample-application",
-    "herokuDeployType": "jar"
+    "prettierJava": true
   },
   "git-provider": "GitHub",
   "git-company": "scowo-team",
